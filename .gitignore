@@ -1,0 +1,5 @@
+target/
+.anchor/
+node_modules/
+*.so
+.DS_Store

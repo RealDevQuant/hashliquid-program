@@ -1,0 +1,15 @@
+[toolchain]
+
+[features]
+resolution = false
+skip-lint = false
+
+[programs.mainnet]
+hashliquid = "6PWQ13DKweZ66XQRMG7kZyau98jE6CJnc1ugxtgnRQn2"
+
+[provider]
+cluster = "mainnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "cargo test -p hashliquid --lib"

@@ -1,0 +1,21 @@
+[package]
+name = "hashliquid"
+version = "0.2.0"
+description = "HashLiquid: a hash-locked wallet for trading perps on Solana"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "hashliquid"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+
+[dependencies]
+anchor-lang = { version = "0.31.1", features = ["init-if-needed"] }
+solana-security-txt = "1.1.1"
